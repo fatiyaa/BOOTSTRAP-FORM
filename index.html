@@ -19,6 +19,7 @@
       href="https://img.freepik.com/premium-vector/computer-monitor-with-potted-plant-top-it_410516-83151.jpg?size=338&ext=jpg&ga=GA1.1.1413502914.1697155200&semt=ais"
     />
     <title>Login</title>
+    <script src="validate.js"></script>
   </head>
   <body>
     <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
@@ -85,6 +86,7 @@
                     type="email"
                     name="email"
                     id="email"
+                    onkeyup="emailCheck()"
                     placeholder="Enter a valid email address"
                     required
                   />
@@ -100,6 +102,7 @@
                     type="password"
                     name="password"
                     id="password"
+                    onkeyup="passCheck()"
                     placeholder="Enter password"
                     required
                   />
